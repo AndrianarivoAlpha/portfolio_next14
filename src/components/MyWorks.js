@@ -68,7 +68,7 @@ const MyWork = () => {
 				</p>
 			</div>
 
-			<div className="gap-2.5 grid lg:grid-cols-3 grid-cols-2">
+			<div className="overflow-hidden gap-2.5 grid lg:grid-cols-3 grid-cols-1 justify-center">
 				{works.map((work) => (
 					<motion.div
 						initial={{ opacity: 0, x: 200 }}
@@ -81,7 +81,7 @@ const MyWork = () => {
 						}}
 						exit={{ opacity: 0 }}
 						key={work.id}
-						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] justify-between"
+						className="flex flex-col gap-2.5 rounded-xl p-2 lg:w-[250px] w-full justify-between"
 						style={{ background: work.gradient }}>
 						<motion.a
 							whileHover={{ scale: 1.05 }}
@@ -95,7 +95,7 @@ const MyWork = () => {
 								width={250}
 								height={250}
 								alt={work.title}
-								className="object-cover rounded-xl rounded-b-2xl bg-white"
+								className="object-cover rounded-xl rounded-b-2xl bg-white w-full"
 							/>
 						</motion.a>
 						<div className="flex flex-col items-center gap-5 mb-2">

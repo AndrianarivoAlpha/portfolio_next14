@@ -94,8 +94,8 @@ const Bio = () => {
 					{/* right */}
 					<Image priority src={Za} height={500} alt="Alpha" className="" />
 				</div>
-				<div className="w-full flex lg:flex-row flex-col gap-5 px-5 py-2.5 justify-between bg-[#30475E]">
-					<div>
+				<div className="w-full flex lg:flex-row flex-col gap-5 px-5 py-2.5 lg:justify-between justify-center items-center bg-[#30475E]">
+					<div className={"flex gap-5"}>
 						<div className="flex flex-row items-center">
 							<h1 className="text-6xl font-bold text-white">5</h1>
 							<p className="uppercase text-sky-200">

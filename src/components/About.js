@@ -6,9 +6,9 @@ import Skills from "./Skills";
 const About = () => {
 	return (
 		<motion.div
-			className=" scroll-smooth"
+			className="scroll-smooth"
 			id="about">
-			<motion.div className="h-full flex flex-col justify-between gap-10 lg:px-20 px-2 py-5">
+			<motion.div className="lg:h-full h-auto flex flex-col justify-between gap-10 lg:px-20 px-2 py-5">
 				<div classname={"w-full flex-row"}>
 					<div className="lg:w-1/2 flex flex-col gap-5">
 						<h1 className="text-3xl font-semibold">Moi,</h1>
@@ -16,7 +16,7 @@ const About = () => {
 							Je suis developpeur web et mobile, je suis responsable du design
 							et de developpement. <br />
 							Mon but est de creer une application responsive avec une
-							experience utilisateur qui repond la neccecite aux diverses normes
+							experience utilisateur qui repond la necessite, aux diverses normes
 							et exigences.
 						</p>
 
@@ -32,7 +32,7 @@ const About = () => {
 					</div>
 					<div />
 				</div>
-				<div className={"flex flex-row"}>
+				<div className={"flex lg:flex-row flex-col h-auto"}>
 					<div className={"lg:w-1/2 lg:flex hidden"} />
 					<Skills />
 				</div>
