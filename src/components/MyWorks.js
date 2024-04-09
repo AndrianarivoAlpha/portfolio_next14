@@ -1,18 +1,6 @@
 "use client";
 
-import * as Icon from "react-icons/io5";
 import { motion } from "framer-motion";
-import Link from "next/Link";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper";
-
 import Image from "next/image";
 
 const MyWork = () => {

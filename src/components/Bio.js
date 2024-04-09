@@ -21,12 +21,12 @@ const Bio = () => {
 				<div className="w-full flex lg:flex-row flex-col-reverse justify-between items-center lg:pl-20 overflow-hidden">
 					{/* Left */}
 					<motion.div
-						initial={{ x: -100, opacity: 0 }}
+						initial={{ x: -200, opacity: 0 }}
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{
 							duration: 2,
 							type: "spring",
-							stiffness: 200,
+							stiffness: 50,
 							ease: "linear",
 						}}
 						className="flex flex-col lg:items-start lg:text-left text-center gap-2">
@@ -94,19 +94,22 @@ const Bio = () => {
 					{/* right */}
 					<Image priority src={Za} height={500} alt="Alpha" className="" />
 				</div>
-				<div className="w-full flex flex-row gap-5 px-5 py-2.5 justify-between bg-[#30475E]">
-					<div className="flex flex-row items-center">
-						<h1 className="text-6xl font-bold text-white">5</h1>
-						<p className="uppercase text-sky-200">
-							Ans <br /> d&apos;experience
-						</p>
+				<div className="w-full flex lg:flex-row flex-col gap-5 px-5 py-2.5 justify-between bg-[#30475E]">
+					<div>
+						<div className="flex flex-row items-center">
+							<h1 className="text-6xl font-bold text-white">5</h1>
+							<p className="uppercase text-sky-200">
+								Ans <br /> d&apos;experience
+							</p>
+						</div>
+						<div className="flex flex-row items-center">
+							<h1 className="text-6xl font-bold text-white">+10</h1>
+							<p className="uppercase text-sky-200">
+								Projets <br /> dans le monde
+							</p>
+						</div>
 					</div>
-					<div className="flex flex-row items-center">
-						<h1 className="text-6xl font-bold text-white">+10</h1>
-						<p className="uppercase text-sky-200">
-							Projets <br /> dans le monde
-						</p>
-					</div>
+
 					<MiniSkills />
 				</div>
 			</div>
