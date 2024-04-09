@@ -15,7 +15,7 @@ import Navbar from "./Navbar";
 
 const Bio = () => {
 	return (
-		<section className={"h-full"}>
+		<section className={"lg:h-full h-auto"}>
 			<Navbar />
 			<div className="bg-white h-[90vh] flex flex-col scroll-smooth" id="bio">
 				<div className="w-full flex lg:flex-row flex-col-reverse justify-between items-center lg:pl-20 overflow-hidden">
