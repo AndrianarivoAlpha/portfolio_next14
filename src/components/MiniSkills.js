@@ -62,7 +62,7 @@ const MiniSkills = () => {
 					whileHover={{ scale: 1.1 }}
 					key={devTool.id}
 					className="hover:cursor-pointer mx-2.5 justify-center">
-					<Image src={devTool.logo} height={50} alt={devTool.name} />
+					<Image src={devTool.logo} height={40} alt={devTool.name} />
 				</motion.div>
 			))}
 		</div>

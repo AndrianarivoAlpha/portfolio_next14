@@ -72,14 +72,14 @@ const Skills = () => {
 
 	return (
 		<>
-			<div className="lg:w-1/2 w-full flex flex-col gap-5" id="skills">
+			<div className="lg:w-1/2 w-full flex flex-col gap-2.5" id="skills">
 				<div>
 					<h1 className="text-3xl font-semibold">Mes compétences</h1>
-					<p className={``}>Petite liste des technologies que je connais.</p>
+					<p className={``}>Des technologies que je connais.</p>
 				</div>
 				<motion.div
 					className={
-						"grid lg:grid-cols-5 grid-cols-2 items-center justify-center h-auto gap-5"
+						"flex items-center flex-wrap justify-center h-auto gap-2.5"
 					}>
 					{devTools.map((devTool) => (
 						<motion.div

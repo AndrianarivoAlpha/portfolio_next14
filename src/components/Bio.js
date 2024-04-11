@@ -15,10 +15,10 @@ import Navbar from "./Navbar";
 
 const Bio = () => {
 	return (
-		<section className={"lg:h-full h-auto"}>
+		<section className={"min-h-[100vh] flex flex-col justify-between"}>
 			<Navbar />
-			<div className="bg-white h-[90vh] flex flex-col scroll-smooth" id="bio">
-				<div className="w-full flex lg:flex-row flex-col-reverse justify-between items-center lg:pl-20 overflow-hidden">
+			<div className="flex flex-col h-full" id="bio">
+				<div className="w-full flex lg:flex-row flex-col-reverse justify-between items-center lg:pl-20 lg:overflow-hidden">
 					{/* Left */}
 					<motion.div
 						initial={{ x: -200, opacity: 0 }}
@@ -31,28 +31,37 @@ const Bio = () => {
 						}}
 						className="flex flex-col lg:items-start lg:text-left text-center gap-2">
 						<h2 className="text-lg font-light">Je suis,</h2>
-						<h3 className="lg:text-4xl text-2xl text-[#30475E] font-bold">
+						<h3 className="lg:text-4xl text-2xl text-[#30475E] font-[900]">
 							Developpeur
 						</h3>
-						<h1 className="lg:text-6xl text-3xl font-bold text-[#30475E]">
+						<motion.h1
+							initial={{ scale: 1.5 }}
+							whileInView={{ scale: 1 }}
+							transition={{
+								duration: 2,
+								type: "spring",
+								stiffness: 50,
+								ease: "linear",
+							}}
+							className="lg:text-6xl text-3xl font-[900] text-[#30475E]">
 							{"</>"} Javascript
-						</h1>
-						<p className="text-gray-600">
-							Je fais des applications web et mobiles.
+						</motion.h1>
+						<p className="text-gray-600 text-xl font-semibold">
+							Je fais des sites Web et des applications mobiles.
 						</p>
 						{/* Social media */}
 						<div className="flex items-center z-10">
 							<div className="bg-[#30475E] h-2 w-20" />
-							<a href="#">
+							<a href="https://twitter.com/FaFa855420">
 								<Image
 									className="hover:animate-bounce"
 									src={Github}
 									height={50}
 									width={50}
-									alt="Twitter"
+									alt="GitHub"
 								/>
 							</a>
-							<a href="#">
+							<a href="https://twitter.com/FaFa855420">
 								<Image
 									className="hover:animate-bounce"
 									src={Twitter}
@@ -61,7 +70,11 @@ const Bio = () => {
 									alt="Twitter"
 								/>
 							</a>
-							<a href="#">
+							<a
+								href="https://www.linkedin.com/in/alpha-abelandrianarivo-4a4bb526a/"
+								noopenner
+								norefferer
+								taget={"blank"}>
 								<Image
 									className="hover:animate-bounce"
 									src={Linkedin}
@@ -92,20 +105,35 @@ const Bio = () => {
 					</motion.div>
 
 					{/* right */}
-					<Image priority src={Za} height={500} alt="Alpha" className="" />
+					<Image
+						priority
+						src={Za}
+						height={500}
+						w={500}
+						alt="alpha-portfolio-image"
+						className="lg:block hidden"
+					/>
+					<Image
+						priority
+						src={Za}
+						height={300}
+						w={300}
+						alt="alpha-portfolio-image"
+						className="lg:hidden lg:rounded-none object-cover rounded-full mt-2.5"
+					/>
 				</div>
-				<div className="w-full flex lg:flex-row flex-col gap-5 px-5 py-2.5 lg:justify-between justify-center items-center bg-[#30475E]">
-					<div className={"flex gap-5"}>
+				<div className="w-full flex lg:flex-row flex-col gap-5 lg:px-5 py-2.5 lg:justify-between justify-center items-center bg-[#30475E]">
+					<div className={"flex lg:flex-row flex-col gap-5"}>
 						<div className="flex flex-row items-center">
-							<h1 className="text-6xl font-bold text-white">5</h1>
+							<h1 className="lg:text-5xl text-3xl font-bold text-white">5</h1>
 							<p className="uppercase text-sky-200">
-								Ans <br /> d&apos;experience
+								Ans <br className={"lg:block hidden"} /> d&apos;experience
 							</p>
 						</div>
 						<div className="flex flex-row items-center">
-							<h1 className="text-6xl font-bold text-white">+10</h1>
+							<h1 className="lg:text-5xl text-3xl font-bold text-white">+10</h1>
 							<p className="uppercase text-sky-200">
-								Projets <br /> dans le monde
+								Projets <br className={"lg:block hidden"} /> dans le monde
 							</p>
 						</div>
 					</div>

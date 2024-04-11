@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 const MyWork = () => {
 	const works = [
@@ -57,9 +59,9 @@ const MyWork = () => {
 	];
 	return (
 		<div
-			className="flex flex-col items-center justify-center h-auto px-2 py-10 mx-2 "
-			id="mywork">
-			<div className="flex flex-col items-center w-full gap-2 mb-5 text-center">
+			className="w-full flex flex-col items-center justify-center h-auto p-5 gap-5"
+			id="projects">
+			<div className="flex flex-col items-center w-full text-center">
 				<h2 className="font-semibold lg:text-2xl text-slate-800">
 					Mes projets recentes
 				</h2>
@@ -67,22 +69,29 @@ const MyWork = () => {
 					Quelque projet dont je suis le realisateur
 				</p>
 			</div>
-
-			<div className="overflow-hidden gap-2.5 grid lg:grid-cols-3 grid-cols-1 justify-center">
+			<Swiper
+				spaceBetween={20}
+				breakpoints={{
+					640: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 3,
+					},
+					1024: {
+						slidesPerView: 5,
+					},
+				}}
+				onSlideChange={() => console.log("slide change")}
+				onSwiper={(swiper) => console.log(swiper)}
+				className={"w-full justify-stretch"}
+				modules={[Navigation, Pagination, Scrollbar, A11y]}
+				navigation>
 				{works.map((work) => (
-					<motion.div
-						initial={{ opacity: 0, x: 200 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{
-							duration: 2,
-							type: "spring",
-							ease: "linear",
-							delay: work.id * 0.2,
-						}}
-						exit={{ opacity: 0 }}
+					<SwiperSlide
 						key={work.id}
-						className="flex flex-col gap-2.5 rounded-xl p-2 lg:w-[250px] w-full justify-between"
-						style={{ background: work.gradient }}>
+						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] h-[280px] justify-between"
+						style={{ background: `${work.gradient}` }}>
 						<motion.a
 							whileHover={{ scale: 1.05 }}
 							transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -110,9 +119,9 @@ const MyWork = () => {
 								Voir le code source
 							</a>
 						</div>
-					</motion.div>
+					</SwiperSlide>
 				))}
-			</div>
+			</Swiper>
 		</div>
 	);
 };
