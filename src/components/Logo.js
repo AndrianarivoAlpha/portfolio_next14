@@ -13,7 +13,7 @@ const Logo = () => {
 				<text
 					id="Alpha"
 					transform="translate(47 28)"
-					fill="#30475e"
+					fill="#fff"
 					fontSize="26"
 					fontFamily="NirmalaUI-Bold, Nirmala UI"
 					fontWeight="700">
@@ -24,7 +24,7 @@ const Logo = () => {
 				<text
 					id="A"
 					transform="translate(9 28)"
-					fill="#30475e"
+					fill="#fff"
 					fontSize="26"
 					fontFamily="NirmalaUI-Bold, Nirmala UI"
 					fontWeight="700">
@@ -36,7 +36,7 @@ const Logo = () => {
 					id="Rectangle_5"
 					data-name="Rectangle 5"
 					fill="none"
-					stroke="#30475e"
+					stroke="#fff"
 					strokeWidth="4">
 					<rect width="36" height="36" stroke="none" />
 					<rect x="2" y="2" width="32" height="32" fill="none" />

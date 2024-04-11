@@ -4,10 +4,6 @@
       "@/*": [
         "./src/*"
       ]
-    },
-  },
-  "exclude": [
-    "node_modules",
-    ".next"
-  ]
+    }
+  }
 }

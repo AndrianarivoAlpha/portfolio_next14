@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
 	return (
-		<nav className="flex justify-between capitalize items-end py-3 bg-white border-b">
+		<nav className="flex justify-between capitalize items-end py-3 bg-gradient-to-l from-gray-100 via-sky-900 to-rose-600">
 			<Link href="/" className="lg:ml-20 m-auto">
 				<Logo />
 			</Link>
@@ -12,19 +12,17 @@ const Navbar = () => {
 			<div className="mr-10 lg:flex gap-10 text-base hidden">
 				<a
 					href="#"
-					className="hover:font-semibold text-[#30475E] flex flex-col items-center">
+					className="hover:font-semibold text-gray-50 flex flex-col items-center">
 					Acceuil
-					<div className="h-[10px] w-[5px] bg-[#30475E]" />
+					<div className="h-[10px] w-[5px] bg-gray-50" />
 				</a>
-				<a href="#about" className="hover:font-semibold text-[#30475E]">
+				<a href="#about" className="hover:font-semibold text-gray-50">
 					A Propos
 				</a>
-				<a
-					href="#projects"
-					className="hover:font-semibold text-[#30475E]">
+				<a href="#projects" className="hover:font-semibold text-gray-50">
 					Mes projets
 				</a>
-				<a href="#footer" className="hover:font-semibold text-[#30475E]">
+				<a href="#footer" className="hover:font-semibold text-gray-50">
 					Contact
 				</a>
 			</div>
