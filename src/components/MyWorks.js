@@ -84,7 +84,7 @@ const MyWork = () => {
 				}}
 				onSlideChange={() => console.log("slide change")}
 				onSwiper={(swiper) => console.log(swiper)}
-				className={"w-full justify-stretch"}
+				className={"w-full justify-stretch hover:cursor-grab"}
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				navigation>
 				{works.map((work) => (

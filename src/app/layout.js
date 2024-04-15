@@ -12,7 +12,7 @@ const AnekTelugu = Anek_Telugu({
 export const metadata = {
 	title: "Abelandrianarivo Alpha - Developpeur Javascript",
 	description:
-		"Developper Javascript et UI Designer en freelance a Madagascar.",
+		"Developpeur Javascript et UI Designer en freelance a Madagascar.",
 };
 
 export default function RootLayout({ children }) {
