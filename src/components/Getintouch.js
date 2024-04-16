@@ -50,7 +50,7 @@ const Getintouch = () => {
 						<h1 className="text-3xl font-semibold text-sky-800">
 							Get in touch, <br />
 							<span className="text-xl font-semibold ">
-								Parlons ensemble de votre prochaine projet.
+								Parlons de vos futur projet.
 							</span>
 						</h1>
 					</div>
