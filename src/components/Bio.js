@@ -58,60 +58,63 @@ const Bio = () => {
 						{"</>"} Javascript
 					</motion.h1>
 					<p className="text-gray-200 text-lg font-semibold">
-						Je fais des sites Web et des applications mobiles en tant que entrepreneur en Freelance base a Madagascar. 
+						Je fais des sites Web et des applications mobiles en tant que
+						entrepreneur en Freelance base a Madagascar.
 					</p>
 					{/* Social media */}
-					<div className="flex items-center z-10">
-						<div className="bg-white h-2 w-20" />
-						<a href="https://github.com/AndrianarivoAlpha">
-							<Image
-								className="hover:animate-bounce"
-								src={Github}
-								height={50}
-								width={50}
-								alt="GitHub"
-							/>
-						</a>
-						<a href="https://twitter.com/FaFa855420">
-							<Image
-								className="hover:animate-bounce"
-								src={Twitter}
-								height={50}
-								width={50}
-								alt="Twitter"
-							/>
-						</a>
-						<a
-							href="https://www.linkedin.com/in/alpha-abelandrianarivo-4a4bb526a/"
-							noopenner
-							norefferer
-							taget={"blank"}>
-							<Image
-								className="hover:animate-bounce"
-								src={Linkedin}
-								height={50}
-								width={50}
-								alt="Linkedin"
-							/>
-						</a>
-						<a href="#">
-							<Image
-								className="hover:animate-bounce"
-								src={Instagram}
-								height={50}
-								width={50}
-								alt="Instagram"
-							/>
-						</a>
-						<a href="#">
-							<Image
-								className="hover:animate-bounce"
-								src={Facebook}
-								height={50}
-								width={50}
-								alt="Facebook"
-							/>
-						</a>
+					<div className="flex lg:flex-row flex-col items-center z-10">
+						<div className="bg-white lg:h-2 lg:w-20 w-2 h-20" />
+						<div className="flex">
+							<a href="https://github.com/AndrianarivoAlpha">
+								<Image
+									className="hover:animate-bounce"
+									src={Github}
+									height={50}
+									width={50}
+									alt="GitHub"
+								/>
+							</a>
+							<a href="https://twitter.com/FaFa855420">
+								<Image
+									className="hover:animate-bounce"
+									src={Twitter}
+									height={50}
+									width={50}
+									alt="Twitter"
+								/>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/alpha-abelandrianarivo-4a4bb526a/"
+								noopenner
+								norefferer
+								taget={"blank"}>
+								<Image
+									className="hover:animate-bounce"
+									src={Linkedin}
+									height={50}
+									width={50}
+									alt="Linkedin"
+								/>
+							</a>
+							<a href="#">
+								<Image
+									className="hover:animate-bounce"
+									src={Instagram}
+									height={50}
+									width={50}
+									alt="Instagram"
+								/>
+							</a>
+							<a href="#">
+								<Image
+									className="hover:animate-bounce"
+									src={Facebook}
+									height={50}
+									width={50}
+									alt="Facebook"
+								/>
+							</a>
+						</div>
 					</div>
 				</motion.div>
 			</div>

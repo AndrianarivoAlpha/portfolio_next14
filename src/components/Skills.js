@@ -68,7 +68,9 @@ const Skills = () => {
 		<>
 			<div className="w-full flex flex-col gap-5 lg:px-52 px-2" id="skills">
 				<div>
-					<h1 className="text-3xl font-semibold text-white">Mes outils</h1>
+					<h1 className="lg:text-3xl text-xl font-semibold text-white">
+						Mes outils
+					</h1>
 					<p className={`text-gray-200`}>
 						Quelques technologies que j&apos;utilise pour creer votre futur
 						application from scratch.
@@ -113,7 +115,8 @@ const Skills = () => {
 								Backend avec Next.JS et NodeJs
 							</h1>
 							<p className="text-gray-200">
-								Cote backend, j&apos;utilise les frameworks Next.js et Nodejs. <br />
+								Cote backend, j&apos;utilise les frameworks Next.js et Nodejs.{" "}
+								<br />
 								MongoBD aussi est souvent utilise pour la NoSQL database.
 							</p>
 						</div>
