@@ -10,12 +10,6 @@ const Navbar = () => {
 			</Link>
 
 			<div className="mr-10 lg:flex gap-10 text-base hidden">
-				<a
-					href="#"
-					className="hover:font-semibold text-gray-50 flex flex-col items-center">
-					Acceuil
-					<div className="h-[10px] w-[5px] bg-gray-50" />
-				</a>
 				<a href="#footer" className="hover:font-semibold text-gray-50">
 					Contact
 				</a>

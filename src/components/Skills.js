@@ -123,7 +123,7 @@ const Skills = () => {
 					</motion.div>
 					<motion.div
 						whileHover={{ scale: 1.1 }}
-						className="hover:cursor-pointer justify-center overflow-hidden p-5 gap-5 border border-gray-500 rounded-lg">
+						className="hover:cursor-pointer flex flex-col justify-center items-center overflow-hidden p-5 gap-5 border border-gray-500 rounded-lg">
 						<Image src={desing.logo} height={60} alt={desing.name} />
 						<div className="flex flex-col gap-5">
 							<h1 className="text-lg text-white font-semibold">

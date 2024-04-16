@@ -15,16 +15,16 @@ const Bio = () => {
 	return (
 		<section className={"flex flex-col"}>
 			<Navbar />
-			<div className="w-full flex-1 items-center lg:px-52 px-2 my-10 gap-5">
+			<div className="w-full flex-1 items-center lg:px-52 px-2 my-10 gap-5 ">
 				{/* right */}
-				<div className="flex lg:flex-row flex-col gap-2 lg:items-end items-center">
+				<div className="flex lg:flex-row flex-col gap-2 lg:items-end items-center ">
 					<Image
 						priority
 						src={Za}
 						height={100}
 						w={100}
 						alt="alpha-portfolio-image"
-						className=" object-cover rounded-full mt-2.5 border-8 pt-20"
+						className=" object-cover rounded-full mt-2.5 border-8 pt-20 bg-gradient-to-r from-cyan-500 to-blue-500"
 					/>
 					<h1 className="lg:text-4xl text-2xl font-[900] dark:text-white text-white">
 						andrianarivo alpha
@@ -43,7 +43,7 @@ const Bio = () => {
 					}}
 					className="flex flex-col lg:items-start lg:text-left text-center gap-2 mt-10">
 					<h3 className="lg:text-2xl text-xl text-cyan-50 font-[600]">
-						Developpeur en fullstack
+						Developpeur fullstack en
 					</h3>
 					<motion.h1
 						initial={{ scale: 1.5 }}
@@ -57,7 +57,7 @@ const Bio = () => {
 						className="lg:text-5xl text-2xl font-[900] text-cyan-100">
 						{"</>"} Javascript
 					</motion.h1>
-					<p className="text-gray-200 text-lg font-semibold">
+					<p className="text-gray-200">
 						Je fais des sites Web et des applications mobiles en tant que
 						entrepreneur en Freelance base a Madagascar.
 					</p>
