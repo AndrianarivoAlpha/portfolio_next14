@@ -42,19 +42,19 @@ const Getintouch = () => {
 
 	return (
 		<div
-			className="bg-slate-200 h-auto p-5 shadow-md rounded-lg lg:mx-52 mx-2"
+			className="bg-[#02161f] h-auto p-5 shadow-md rounded-lg lg:mx-52 mx-2"
 			id="contact">
 			<div className="w-full flex lg:flex-row flex-col gap-5 lg:items-start items-center justify-around">
 				<div>
 					<div className="flex flex-col lg:items-start items-center gap-3">
-						<h1 className="text-3xl font-semibold text-sky-800">
+						<h1 className="text-3xl font-semibold text-gray-200">
 							Get in touch, <br />
 							<span className="text-xl font-semibold ">
 								Parlons de vos futur projet.
 							</span>
 						</h1>
 					</div>
-					<p className="text-xl font-semibold mt-10">
+					<p className="text-xl font-semibold my-5 text-white">
 						Qu&apos;est ce qui vous interesse?
 					</p>
 					{[
