@@ -42,7 +42,7 @@ const Getintouch = () => {
 
 	return (
 		<div
-			className="bg-[#02161f] h-auto p-5 shadow-md rounded-lg lg:mx-52 mx-2"
+			className="h-auto p-5 rounded-lg lg:mx-52 mx-2"
 			id="contact">
 			<div className="w-full flex lg:flex-row flex-col gap-5 lg:items-start items-center justify-around">
 				<div>
@@ -54,7 +54,7 @@ const Getintouch = () => {
 							</span>
 						</h1>
 					</div>
-					<p className="text-xl font-semibold my-5 text-white">
+					<p className="text-lg my-5 text-white">
 						Qu&apos;est ce qui vous interesse?
 					</p>
 					{[
@@ -68,7 +68,7 @@ const Getintouch = () => {
 						<button
 							key={i}
 							type="button"
-							className="active:bg-sky-700 text-sky-700 hover:text-white border border-sky-700 hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-sky-300 font-medium rounded-lg text-sm px-5 py-0.5 text-center me-2 mb-2 dark:border-sky-500 dark:text-sky-500 dark:hover:text-white dark:hover:bg-sky-500 dark:focus:ring-sky-800"
+							className="active:bg-cyan-700 text-cyan-700 hover:text-white border border-cyan-700 hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-0.5 text-center me-2 mb-2 dark:border-cyan-500 dark:text-cyan-500 dark:hover:text-white dark:hover:bg-cyan-500 dark:focus:ring-cyan-800"
 							active={true}>
 							{item}
 						</button>
