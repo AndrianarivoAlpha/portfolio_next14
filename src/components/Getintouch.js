@@ -42,7 +42,7 @@ const Getintouch = () => {
 
 	return (
 		<div
-			className="bg-slate-200 h-auto my-5 mx-2 lg:m-5 p-5 shadow-md"
+			className="bg-slate-200 h-auto p-5 shadow-md rounded-lg lg:mx-52 mx-2"
 			id="contact">
 			<div className="w-full flex lg:flex-row flex-col gap-5 lg:items-start items-center justify-around">
 				<div>

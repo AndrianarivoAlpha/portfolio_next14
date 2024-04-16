@@ -59,13 +59,13 @@ const MyWork = () => {
 	];
 	return (
 		<div
-			className="w-full flex flex-col items-center justify-center h-auto p-5 gap-5"
+			className="w-full flex flex-col items-center justify-center h-auto px-2 gap- lg:px-52 my-10 gap-5"
 			id="projects">
-			<div className="flex flex-col items-center w-full text-center">
-				<h2 className="font-semibold lg:text-2xl text-slate-800">
+			<div className="flex flex-col w-full text-center">
+				<h2 className="font-semibold lg:text-2xl text-white">
 					Mes projets recentes
 				</h2>
-				<p className="text-gray-500">
+				<p className="text-gray-200">
 					Quelque projet dont je suis le realisateur
 				</p>
 			</div>
@@ -78,9 +78,6 @@ const MyWork = () => {
 					768: {
 						slidesPerView: 3,
 					},
-					1024: {
-						slidesPerView: 5,
-					},
 				}}
 				onSlideChange={() => console.log("slide change")}
 				onSwiper={(swiper) => console.log(swiper)}
@@ -90,8 +87,7 @@ const MyWork = () => {
 				{works.map((work) => (
 					<SwiperSlide
 						key={work.id}
-						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] h-[280px] justify-between"
-						style={{ background: `${work.gradient}` }}>
+						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] h-[280px] justify-between border border-gray-400">
 						<motion.a
 							whileHover={{ scale: 1.05 }}
 							transition={{ type: "spring", stiffness: 200, damping: 10 }}
@@ -101,10 +97,10 @@ const MyWork = () => {
 							<Image
 								priority={true}
 								src={work.src}
-								width={250}
-								height={250}
+								width={300}
+								height={300}
 								alt={work.title}
-								className="object-cover rounded-xl rounded-b-2xl bg-white w-full"
+								className="object-cover rounded-xl rounded-b-2xl w-full"
 							/>
 						</motion.a>
 						<div className="flex flex-col items-center gap-5 mb-2">
@@ -112,12 +108,6 @@ const MyWork = () => {
 								<p className="font-semibold text-white">{work.title}</p>
 								<p className="text-sm font-light text-gray-300">{work.about}</p>
 							</div>
-
-							<a
-								href="#"
-								class="text-white bg-[#30475E] hover:bg-[#406386] focus:ring-4 focus:ring-[#30475E] font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[#30475E] dark:hover:bg-[#30475E] focus:outline-none dark:focus:ring-[#30475E]">
-								Voir le code source
-							</a>
 						</div>
 					</SwiperSlide>
 				))}

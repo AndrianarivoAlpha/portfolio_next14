@@ -4,8 +4,8 @@ import Logo from "./Logo";
 
 const Navbar = () => {
 	return (
-		<nav className="flex justify-between capitalize items-end py-3 bg-gradient-to-l from-gray-100 via-sky-900 to-rose-600">
-			<Link href="/" className="lg:ml-20 m-auto">
+		<nav className="flex justify-between capitalize items-end py-3 lg:px-52 px-2">
+			<Link href="/" className="lg:ml-0 m-auto">
 				<Logo />
 			</Link>
 
@@ -15,12 +15,6 @@ const Navbar = () => {
 					className="hover:font-semibold text-gray-50 flex flex-col items-center">
 					Acceuil
 					<div className="h-[10px] w-[5px] bg-gray-50" />
-				</a>
-				<a href="#about" className="hover:font-semibold text-gray-50">
-					A Propos
-				</a>
-				<a href="#projects" className="hover:font-semibold text-gray-50">
-					Mes projets
 				</a>
 				<a href="#footer" className="hover:font-semibold text-gray-50">
 					Contact

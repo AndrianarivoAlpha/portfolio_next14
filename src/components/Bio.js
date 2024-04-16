@@ -9,15 +9,28 @@ import Twitter from "../assets/images/logo/twitter.png";
 import Linkedin from "../assets/images/logo/linkedin.png";
 import Instagram from "../assets/images/logo/instagram.png";
 import Github from "../assets/images/logo/github.png";
-
-import MiniSkills from "./MiniSkills";
 import Navbar from "./Navbar";
 
 const Bio = () => {
 	return (
-		<section className={"min-h-[100vh] flex flex-col"}>
+		<section className={"flex flex-col"}>
 			<Navbar />
-			<div className="w-full flex-1 flex lg:flex-row flex-col-reverse justify-between items-center lg:pl-20 lg:overflow-hidden">
+			<div className="w-full flex-1 items-center lg:px-52 px-2 my-10 gap-5">
+				{/* right */}
+				<div className="flex lg:flex-row flex-col gap-2 lg:items-end items-center">
+					<Image
+						priority
+						src={Za}
+						height={100}
+						w={100}
+						alt="alpha-portfolio-image"
+						className=" object-cover rounded-full mt-2.5 border-8 pt-20"
+					/>
+					<h1 className="lg:text-4xl text-2xl font-[900] dark:text-white text-white">
+						andrianarivo alpha
+					</h1>
+				</div>
+
 				{/* Left */}
 				<motion.div
 					initial={{ x: -200, opacity: 0 }}
@@ -28,10 +41,9 @@ const Bio = () => {
 						stiffness: 50,
 						ease: "linear",
 					}}
-					className="flex flex-col lg:items-start lg:text-left text-center gap-2">
-					<h2 className="text-lg font-light">Je suis,</h2>
-					<h3 className="lg:text-4xl text-2xl text-[#30475E] font-[900]">
-						Developpeur
+					className="flex flex-col lg:items-start lg:text-left text-center gap-2 mt-10">
+					<h3 className="lg:text-2xl text-xl text-cyan-50 font-[600]">
+						Developpeur en fullstack
 					</h3>
 					<motion.h1
 						initial={{ scale: 1.5 }}
@@ -42,16 +54,16 @@ const Bio = () => {
 							stiffness: 50,
 							ease: "linear",
 						}}
-						className="lg:text-6xl text-3xl font-[900] text-[#30475E]">
+						className="lg:text-5xl text-2xl font-[900] text-cyan-100">
 						{"</>"} Javascript
 					</motion.h1>
-					<p className="text-gray-600 text-xl font-semibold">
-						Je fais des sites Web et des applications mobiles.
+					<p className="text-gray-200 text-lg font-semibold">
+						Je fais des sites Web et des applications mobiles en tant que entrepreneur en Freelance base a Madagascar. 
 					</p>
 					{/* Social media */}
 					<div className="flex items-center z-10">
-						<div className="bg-[#30475E] h-2 w-20" />
-						<a href="https://twitter.com/FaFa855420">
+						<div className="bg-white h-2 w-20" />
+						<a href="https://github.com/AndrianarivoAlpha">
 							<Image
 								className="hover:animate-bounce"
 								src={Github}
@@ -102,18 +114,6 @@ const Bio = () => {
 						</a>
 					</div>
 				</motion.div>
-
-				{/* right */}
-				<div className="flex-1 flex justify-center items-center">
-					<Image
-						priority
-						src={Za}
-						height={300}
-						w={300}
-						alt="alpha-portfolio-image"
-						className=" object-cover rounded-full mt-2.5 border-8 pt-20"
-					/>
-				</div>
 			</div>
 		</section>
 	);
