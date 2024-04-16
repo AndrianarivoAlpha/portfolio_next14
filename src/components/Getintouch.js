@@ -41,10 +41,10 @@ const Getintouch = () => {
 	};
 
 	return (
-		<div className="h-auto p-5 rounded-lg lg:mx-52 mx-2" id="contact">
-			<div className="w-full flex lg:flex-row flex-col gap-5 lg:items-start items-center justify-around">
+		<div className="lg:mx-52 mx-2" id="contact">
+			<div className="w-full flex lg:flex-row flex-col gap-5 items-startjustify-around">
 				<div>
-					<div className="flex flex-col lg:items-start items-center gap-3">
+					<div className="flex flex-col items-start gap-3">
 						<h1 className="text-3xl font-semibold text-gray-200">
 							Get in touch, <br />
 							<span className="text-xl font-semibold ">

@@ -9,7 +9,7 @@ const Navbar = () => {
 				<Logo />
 			</Link>
 
-			<div className="mr-10 lg:flex gap-10 text-base hidden">
+			<div className="lg:flex gap-10 text-base hidden">
 				<a href="#footer" className="hover:font-semibold text-gray-50">
 					Contact
 				</a>
