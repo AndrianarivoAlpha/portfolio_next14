@@ -41,9 +41,7 @@ const Getintouch = () => {
 	};
 
 	return (
-		<div
-			className="h-auto p-5 rounded-lg lg:mx-52 mx-2"
-			id="contact">
+		<div className="h-auto p-5 rounded-lg lg:mx-52 mx-2" id="contact">
 			<div className="w-full flex lg:flex-row flex-col gap-5 lg:items-start items-center justify-around">
 				<div>
 					<div className="flex flex-col lg:items-start items-center gap-3">
