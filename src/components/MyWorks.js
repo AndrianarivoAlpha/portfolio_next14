@@ -61,7 +61,7 @@ const MyWork = () => {
 		<div
 			className="w-full flex flex-col items-center justify-center h-auto px-2 gap- lg:px-52 my-10 gap-5"
 			id="projects">
-			<div className="flex flex-col w-full text-center">
+			<div className="flex flex-col w-full">
 				<h2 className="font-semibold lg:text-2xl text-white">
 					Mes projets recentes
 				</h2>
@@ -87,7 +87,7 @@ const MyWork = () => {
 				{works.map((work) => (
 					<SwiperSlide
 						key={work.id}
-						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] h-[280px] justify-between border border-gray-400">
+						className="flex flex-col gap-2.5 rounded-xl p-2 w-[250px] h-[280px] justify-between border border-gray-800">
 						<motion.a
 							whileHover={{ scale: 1.05 }}
 							transition={{ type: "spring", stiffness: 200, damping: 10 }}

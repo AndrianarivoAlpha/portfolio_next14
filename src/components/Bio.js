@@ -26,8 +26,8 @@ const Bio = () => {
 						alt="alpha-portfolio-image"
 						className=" object-cover rounded-full mt-2.5 border-8 pt-20 bg-gradient-to-r from-cyan-500 to-blue-500"
 					/>
-					<h1 className="lg:text-4xl text-2xl font-[900] dark:text-white text-white">
-						andrianarivo alpha
+					<h1 className="lg:text-4xl text-2xl font-[700] dark:text-white text-white">
+						Andrianarivo Alpha
 					</h1>
 				</div>
 
@@ -42,7 +42,7 @@ const Bio = () => {
 						ease: "linear",
 					}}
 					className="flex flex-col lg:items-start lg:text-left text-center gap-2 mt-10">
-					<h3 className="lg:text-2xl text-xl text-cyan-50 font-[600]">
+					<h3 className="lg:text-2xl text-xl text-cyan-50 font-[500]">
 						Developpeur fullstack en
 					</h3>
 					<motion.h1

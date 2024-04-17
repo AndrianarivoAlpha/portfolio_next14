@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col bg-gradient-to-r from-[#022838] to-[#030117]">
+		<main className="flex min-h-screen flex-col bg-gradient-to-r from-[#050d1c] to-[#030d1f]">
 			<Bio />
 			<Skills />
 			<MyWork />

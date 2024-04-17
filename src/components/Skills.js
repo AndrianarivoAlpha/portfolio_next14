@@ -81,7 +81,7 @@ const Skills = () => {
 						<motion.div
 							whileHover={{ scale: 1.1 }}
 							key={devTool.id}
-							className="hover:cursor-pointer rounded-lg border border-gray-500 w-full flex flex-col items-center justify-center overflow-hidden p-5 gap-5">
+							className="hover:cursor-pointer rounded-lg border border-gray-800 w-full flex flex-col items-center justify-center overflow-hidden p-5 gap-5">
 							<Image src={devTool.logo} height={60} alt={devTool.name} />
 							<div className="flex flex-col gap-5">
 								<h1 className="text-lg text-white font-semibold">
@@ -95,7 +95,7 @@ const Skills = () => {
 				<div className="flex lg:flex-row flex-col gap-5">
 					<motion.div
 						className={
-							"flex-1 flex flex-col gap-5 border border-gray-500 items-center rounded-lg bg-lime-950/50 p-5"
+							"flex-1 flex flex-col gap-5 border border-gray-800 items-center rounded-lg bg-lime-950/50 p-5"
 						}>
 						<div className="flex gap-5 justify-around">
 							{backendTools.map((devTool) => (
@@ -112,10 +112,10 @@ const Skills = () => {
 						</div>
 						<div className="flex flex-col gap-5">
 							<h1 className="text-lg text-white font-semibold">
-								Backend avec Next.JS et NodeJs
+								Backend avec Next.JS et Node.Js
 							</h1>
 							<p className="text-gray-200">
-								Cote backend, j&apos;utilise les frameworks Next.js et Nodejs.{" "}
+								Cote backend, j&apos;utilise les frameworks Next.js et Node.Js.{" "}
 								<br />
 								MongoBD aussi est souvent utilise pour la NoSQL database.
 							</p>
@@ -123,7 +123,7 @@ const Skills = () => {
 					</motion.div>
 					<motion.div
 						whileHover={{ scale: 1.1 }}
-						className="hover:cursor-pointer flex flex-col justify-center items-center overflow-hidden p-5 gap-5 border border-gray-500 rounded-lg">
+						className="hover:cursor-pointer flex flex-col justify-center items-center overflow-hidden p-5 gap-5 border border-gray-800 rounded-lg">
 						<Image src={desing.logo} height={60} alt={desing.name} />
 						<div className="flex flex-col gap-5">
 							<h1 className="text-lg text-white font-semibold">
